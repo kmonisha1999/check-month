@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>check month</title>
+	</head>
+<body>
+<script>
+    var now=new Date(prompt("Enter year,month,day"))
+	var checkMonth=now.getMonth();
+	console.log(checkMonth)
+	if(checkMonth==0 || checkMonth==2 || checkMonth==4 || checkMonth==6 || checkMonth==8 ){
+	    console.log("This Month has 31 days")
+	}
+	else if(checkMonth==1){
+	    console.log("This Month 28 or 29 days")
+	}
+	else{
+	    console.log("This Month has 30 days")
+	}
+
+
+
+</script>
+</body>
+</html>
